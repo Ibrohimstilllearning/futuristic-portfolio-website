@@ -52,7 +52,7 @@ export function ContactSection() {
               {[
                 { icon: Mail, label: "Email", value: "ibrohimstilllearning@gmail.com" },
                 { icon: MapPin, label: "Location", value: "Indonesia" },
-                { icon: Clock, label: "Timezone", value: "PST (UTC-8)" },
+                { icon: Clock, label: "Timezone", value: "WIB" },
               ].map(({ icon: Icon, label, value }) => (
                 <div key={label} className="flex items-center gap-4">
                   <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg border border-border bg-secondary/50 text-primary">

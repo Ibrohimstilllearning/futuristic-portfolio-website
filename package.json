@@ -2,6 +2,22 @@
   "name": "my-project",
   "version": "0.1.0",
   "private": true,
+  "description": "",
+  "homepage": "https://github.com/Ibrohimstilllearning/futuristic-portfolio-website#readme",
+  "bugs": {
+    "url": "https://github.com/Ibrohimstilllearning/futuristic-portfolio-website/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ibrohimstilllearning/futuristic-portfolio-website.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
   "scripts": {
     "dev": "next dev --turbo",
     "build": "next build",
