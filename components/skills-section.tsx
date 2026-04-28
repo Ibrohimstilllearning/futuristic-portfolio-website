@@ -6,7 +6,6 @@ const skillCategories = [
   {
     title: "Frontend",
     skills: [
-      { name: "React JS", level: 60 },
       { name: "Flutter", level: 92 },
       { name: "Tailwind CSS", level: 90 },
       { name: "Bootstrap", level: 70 },
@@ -16,16 +15,15 @@ const skillCategories = [
     title: "Backend",
     skills: [
       { name: "Node.js", level: 50 },
-      { name: "Python", level: 43 },
+      { name: "SQLite", level: 70 },
       { name: "MySQL", level: 85 },
-      { name: "PHP", level: 80 },
     ],
   },
 ]
 
 const technologies = [
-  "React","JavaScript", "Node.js", "Python", "MySQL",
-  "SQLite","Flutter","Tailwind CSS", "Vercel", "Figma", "Dart", "Firebase", "Supabase",
+  "Node.js","MySQL",
+  "SQLite","Flutter", "Vercel", "Figma", "Dart",
 ]
 
 export function SkillsSection() {
