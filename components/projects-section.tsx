@@ -9,7 +9,6 @@ const projects = [
     title: "NexusAnalytics",
     description:
       "A real-time analytics dashboard built with Next.js and WebSockets. Features interactive charts, custom widgets, and team collaboration tools.",
-    image: "/images/project-1.jpg",
     tags: ["Next.js", "TypeScript", "D3.js", "WebSocket"],
     liveUrl: "#",
     githubUrl: "#",
