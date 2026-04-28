@@ -86,16 +86,6 @@ export function ProjectsSection() {
               }`}
               style={{ transitionDelay: `${200 + index * 150}ms` }}
             >
-              <div className="relative aspect-video overflow-hidden">
-                <Image
-                  src={project.image || "/placeholder.svg"}
-                  alt={`Screenshot of ${project.title}`}
-                  fill
-                  sizes="(max-width: 768px) 100vw, 50vw"
-                  className="object-cover transition-transform duration-500 group-hover:scale-105"
-                />
-                <div className="absolute inset-0 bg-background/40 transition-opacity duration-500 group-hover:opacity-0" />
-              </div>
 
               <div className="p-6">
                 <div className="mb-3 flex items-center justify-between">
