@@ -6,39 +6,69 @@ import Image from "next/image"
 
 const projects = [
   {
-    title: "NexusAnalytics",
+    title: "LSP MKC App",
     description:
-      "A real-time analytics dashboard built with Next.js and WebSockets. Features interactive charts, custom widgets, and team collaboration tools.",
-    tags: ["Next.js", "TypeScript", "D3.js", "WebSocket"],
-    liveUrl: "#",
-    githubUrl: "#",
+      "Professional certification application for LSP (Lembaga Sertifikasi Profesi) MKC. Comprehensive platform for managing certifications, exams, and professional credentials with secure REST API backend and intuitive mobile interface.",
+    image: "/placeholder.svg",
+    tags: ["Flutter", "Laravel REST API", "GetX"],
+    githubUrl: "https://github.com/Ibrohimstilllearning/lsp_mkc_app.git",
   },
   {
-    title: "VoltCommerce",
+    title: "Alera App",
     description:
-      "Modern headless e-commerce platform with blazing-fast performance. Built on edge functions with optimistic UI updates.",
-    image: "/images/project-2.jpg",
-    tags: ["React", "Stripe", "Supabase", "Tailwind"],
-    liveUrl: "#",
-    githubUrl: "#",
+      "Online health center (Puskesmas) application for managing patient records, appointments, and medical services. Built for seamless healthcare management with real-time notifications and patient data synchronization.",
+    image: "/placeholder.svg",
+    tags: ["Flutter", "GetX"],
+    githubUrl: "https://github.com/Ibrohimstilllearning/alera_app.git",
   },
   {
-    title: "SynthAI Chat",
+    title: "Hadhir Apps",
     description:
-      "AI-powered conversational interface with streaming responses, memory context, and multi-modal input support.",
-    image: "/images/project-3.jpg",
-    tags: ["AI SDK", "OpenAI", "Next.js", "Vercel"],
-    liveUrl: "#",
-    githubUrl: "#",
+      "Employee attendance and absence tracking system for organizations. Real-time clock-in/out functionality, attendance reports, and automated tracking with cloud synchronization for reliable workforce management.",
+    image: "/placeholder.svg",
+    tags: ["Firebase", "Flutter"],
+    githubUrl: "https://github.com/Ibrohimstilllearning/hadhirapps.git",
   },
   {
-    title: "PulseConnect",
+    title: "Scheduler App",
     description:
-      "Real-time social platform with live feeds, direct messaging, and community spaces. Built for scale with serverless architecture.",
-    image: "/images/project-4.jpg",
-    tags: ["Node.js", "PostgreSQL", "Redis", "Docker"],
-    liveUrl: "#",
-    githubUrl: "#",
+      "AI-powered scheduling application that intelligently suggests optimal schedules using Google Gemini API. Automates schedule optimization with machine learning recommendations for efficient time management.",
+    image: "/placeholder.svg",
+    tags: ["Gemini API", "Flutter"],
+    githubUrl: "https://github.com/Ibrohimstilllearning/Scheduler.git",
+  },
+  {
+    title: "QR Scanner",
+    description:
+      "Fast and reliable online QR code scanning application. Supports real-time QR code detection, multiple format support, and seamless data processing with offline capability and instant results.",
+    image: "/placeholder.svg",
+    tags: ["Flutter", "Dart"],
+    githubUrl: "https://github.com/Ibrohimstilllearning/qr_skanner.git",
+  },
+  {
+    title: "Noor Travel",
+    description:
+      "Umrah travel company profile website showcasing services, packages, and contact information for Noor Travel. Built with modern frontend tooling and deployed on Vercel.",
+    image: "/placeholder.svg",
+    tags: ["React.js", "Tailwind CSS", "Vercel", "Company Profile"],
+    githubUrl: "https://github.com/Ibrohimstilllearning/noor-travel.git",
+    liveUrl: "https://noor-travel-chi.vercel.app/",
+  },
+  {
+    title: "News App",
+    description:
+      "Dynamic news aggregation application powered by NewsAPI.org. Features real-time news updates, personalized feeds, advanced search, and category filtering for comprehensive news consumption.",
+    image: "/placeholder.svg",
+    tags: ["Flutter", "Dart", "NewsAPI.org"],
+    githubUrl: "https://github.com/Ibrohimstilllearning/news_app.git",
+  },
+  {
+    title: "Payroll Service",
+    description:
+      "Enterprise payroll management system for automated salary processing, deductions, tax calculations, and payment distributions. Built with pure PHP for reliable backend processing and secure financial operations.",
+    image: "/placeholder.svg",
+    tags: ["PHP"],
+    githubUrl: "https://github.com/Ibrohimstilllearning/payroll-service.git",
   },
 ]
 
@@ -91,20 +121,27 @@ export function ProjectsSection() {
                 <div className="mb-3 flex items-center justify-between">
                   <h3 className="text-lg font-semibold text-foreground">{project.title}</h3>
                   <div className="flex items-center gap-3">
-                    <a
-                      href={project.githubUrl}
-                      aria-label={`View ${project.title} source code on GitHub`}
-                      className="text-muted-foreground transition-colors hover:text-primary"
-                    >
-                      <Github size={18} />
-                    </a>
-                    <a
-                      href={project.liveUrl}
-                      aria-label={`View ${project.title} live demo`}
-                      className="text-muted-foreground transition-colors hover:text-primary"
-                    >
-                      <ExternalLink size={18} />
-                    </a>
+                    {project.githubUrl && (
+                      <a
+                        href={project.githubUrl}
+                        aria-label={`View ${project.title} source code on GitHub`}
+                        className="text-muted-foreground transition-colors hover:text-primary"
+                      >
+                        <Github size={18} />
+                      </a>
+                    )}
+
+                    {project.liveUrl && (
+                      <a
+                        href={project.liveUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label={`Open ${project.title} live site`}
+                        className="text-muted-foreground transition-colors hover:text-primary"
+                      >
+                        <ExternalLink size={18} />
+                      </a>
+                    )}
                   </div>
                 </div>
 

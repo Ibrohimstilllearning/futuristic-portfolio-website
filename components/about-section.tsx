@@ -73,9 +73,6 @@ export function AboutSection() {
             <p className="mb-6 text-base leading-relaxed text-muted-foreground sm:text-lg">
               {"Currently, I'm focused on creating seamless developer experiences and building products that help teams ship faster. I believe great software is born at the intersection of thoughtful design and robust engineering. ."}
             </p>
-            <p className="text-base leading-relaxed text-muted-foreground sm:text-lg">
-              {"When I'm not coding, you'll find me exercising my programming logic."}
-            </p>
           </div>
 
           <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
