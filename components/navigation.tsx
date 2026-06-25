@@ -75,7 +75,7 @@ export function Navigation() {
             ))}
           </ul>
           <a
-            href="/resume.pdf"
+            href="/"
             download
             className="inline-flex items-center gap-2 rounded-lg border border-primary/40 bg-primary/10 px-4 py-2 font-mono text-xs font-medium text-primary transition-all duration-300 hover:border-primary hover:bg-primary/20 hover:shadow-[0_0_15px_hsl(210_100%_56%/0.2)]"
           >
@@ -115,7 +115,7 @@ export function Navigation() {
             ))}
             <li>
               <a
-                href="/resume.pdf"
+                href="/MYCV.pdf"
                 download
                 onClick={() => setIsMobileOpen(false)}
                 className="mt-2 flex items-center gap-2 rounded-lg border border-primary/40 bg-primary/10 px-4 py-3 font-mono text-sm font-medium text-primary transition-all duration-300 hover:border-primary hover:bg-primary/20"

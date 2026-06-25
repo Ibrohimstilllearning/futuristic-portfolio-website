@@ -67,8 +67,16 @@ const projects = [
     description:
       "Enterprise payroll management system for automated salary processing, deductions, tax calculations, and payment distributions. Built with pure PHP for reliable backend processing and secure financial operations.",
     image: "/placeholder.svg",
-    tags: ["PHP"],
+    tags: ["PHP", "Laravel 10"],
     githubUrl: "https://github.com/Ibrohimstilllearning/payroll-service.git",
+  },
+  {
+    title: "ArbainAPI",
+    description:
+      "A RESTful API providing access to the complete Hadith Arbain An-Nawawi (42 Hadiths) in multiple languages — Arabic, English, and Indonesian.",
+    image: "/placeholder.svg",
+    tags: ["Node.js", "ExpressJS", "Helmet", "CORS"],
+    githubUrl: "https://github.com/Ibrohimstilllearning/arbain_api.git",
   },
 ]
 
