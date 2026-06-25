@@ -89,7 +89,7 @@ build pixel-perfect, accessible, and performant web experiences. Specializing in
             Get in Touch
           </a>
           <a
-            href="/cv.pdf"
+            href="/MYCV.pdf"
             className="group inline-flex items-center gap-2 rounded-lg border border-primary/30 bg-primary/10 px-6 py-3 font-mono text-sm font-medium text-primary backdrop-blur-sm transition-all duration-300 hover:border-primary hover:bg-primary/20 hover:shadow-[0_0_20px_hsl(210_100%_56%/0.25)]"
           >
             <Download size={16} className="transition-transform group-hover:-translate-y-0.5" />
